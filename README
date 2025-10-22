@@ -29,3 +29,25 @@ Mínimo de 3 gráficos diferentes, que pueden incluir gráficos de barras, circu
 Después del análisis, escriba un texto explicando a qué tienda debería vender el Sr. Juan y por qué, basándose en los datos presentados.
 
 ¡Éxito en tu proyecto!
+
+
+##Instrucciones de uso, 
+
+en el documento de colab encontraras, diferentes pasos, en los cuales se realizan las diversas actividades/cálculos, en caso de ser necesario en el primer  recuadro de cogido podremos modificar
+el origen de los datos. si estos conservan la misma estructura no se necesita realizar ninguna otra accion mas que ejecutar el promt completo.
+
+el código o prompt esta creado para que a medida que vas ejecutando cada linea de código, puedas ir visualizando los diferentes pasos y sus resultados de acuerdo a una evaluación de esta empresa
+
+se mostraran fragmentos de tablas, para ayudar con la visualización inicial.
+se imprimirán graficos para un mejor entendimiento de los datos, al igual que 3 mapas interactivos que dan una visión diferente de la forma de trabajo.
+
+
+para terminar, hay un apartado llamado "Informe final" el cual se emplea, para poder redactar un pequeño resumen de los datos observados, combinándolo con las graficas y los links a los mapas interactivos.
+
+este programa termina con 2 líneas de código comentadas las cuales permiten instalar las librerias para poder exportar el informe en formato PDF y posteriormente la accion de publicarlo en PDF, 
+unicamente es necesario borrar el signo de gato "#".
+
+como nota importante, todo grafico generado en este código, se guarda directamente en Drive, posteriormente se sube al repositorio de GitHub manualmente por dicho motivo no se ejecutan las líneas de código de impresión del informe.
+pero en el pdf "Reporte_final_ (Reporte/Reporte_final_.pdf) localizado en la carpeta Reporte, podemos tener acceso al documento final, que se genera con esos códigos, teniendo acceso libre a los links interactivos.
+
+
