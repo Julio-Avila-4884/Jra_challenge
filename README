@@ -1,53 +1,176 @@
-JRA_AluraStore_challenge_g9
+# Alura Store — Análisis de Ventas y Desempeño del Negocio
 
-Primer Challenge de Data Science
+## Contexto del Proyecto
 
-Descripcion Durante este desafío, ayudarás al Sr. Juan a decidir qué tienda de su cadena Alura Store debe vender para iniciar un nuevo emprendimiento. Para ello, analizarás datos de ventas, rendimiento y reseñas de las 4 tiendas de Alura Store. El objetivo es identificar la tienda menos eficiente y presentar una recomendación final basada en los datos.
+Alura Store es un negocio minorista con cuatro sucursales.  
+El objetivo de este análisis es proporcionar **una visión global y por sucursal del desempeño del negocio**, permitiendo al Sr. Juan conocer el estatus actual de su operación y apoyar la **toma de decisiones estratégicas**.
 
-Lo que practicarás:
+El estudio considera múltiples factores clave como ingresos, rentabilidad, productos, satisfacción del cliente, métodos de pago y comportamiento geográfico de las ventas.
 
-Cargue y manipule datos CSV con la biblioteca Pandas.
+---
 
-Cree visualizaciones de datos con la biblioteca Matplotlib.
+## Objetivo del Análisis
 
-Analice métricas como ingresos, reseñas y rendimiento de ventas.
+- Evaluar ingresos y ganancias por sucursal.
+- Analizar la participación de ingresos de cada tienda.
+- Identificar categorías y productos más y menos vendidos.
+- Evaluar la calificación promedio de los clientes.
+- Analizar los métodos de pago predominantes.
+- Apoyar decisiones estratégicas sobre inventario y viabilidad de sucursales.
 
-Requisitos:
+---
 
-Analizar datos de la tienda:
+## Datos Utilizados
 
-Debes evaluar información como los ingresos, las categorías más vendidas, las reseñas de los clientes, los productos más vendidos y el envío promedio.
+- Fuente: Información transaccional proporcionada por el cliente.
+- Número de sucursales analizadas: **4**.
+- Variables principales:
+  - Sucursal
+  - Categoría y producto
+  - Ingresos
+  - Costos de envío
+  - Calificación del cliente
+  - Método de pago
+  - Ubicación geográfica
 
-Crear gráficos para visualización:
+---
 
-Decide qué tipos de gráficos utilizar para presentar los resultados de forma clara y visual.
+## Metodología
 
-Mínimo de 3 gráficos diferentes, que pueden incluir gráficos de barras, circulares, de dispersión y otros.
+1. Ingesta y validación de datos  
+2. Cálculo de ingresos y ganancias  
+3. Análisis comparativo por sucursal  
+4. Análisis de categorías y productos  
+5. Evaluación de satisfacción del cliente  
+6. Análisis de métodos de pago  
+7. Visualización geográfica (heatmaps y mapas de dispersión)  
+8. Interpretación de resultados y recomendaciones  
 
--Enviar una recomendación:
+---
 
-Después del análisis, escriba un texto explicando a qué tienda debería vender el Sr. Juan y por qué, basándose en los datos presentados.
+## Principales Hallazgos
 
-¡Éxito en tu proyecto!
+### Ingresos y Rentabilidad por Sucursal
 
+- La **Sucursal 1** presenta los mayores ingresos y ganancias.
+- La **Sucursal 4** muestra el menor aporte a las ganancias globales, aunque registra el menor costo promedio de envío.
+- La participación de ingresos se mantiene relativamente equilibrada entre sucursales (≈24%–26%).
 
-##Instrucciones de uso, 
+**Insight:**  
+Un menor costo operativo no garantiza mayor rentabilidad; el volumen de ventas y la mezcla de productos son determinantes clave.
 
-en el documento de colab encontraras, diferentes pasos, en los cuales se realizan las diversas actividades/cálculos, en caso de ser necesario en el primer  recuadro de cogido podremos modificar
-el origen de los datos. si estos conservan la misma estructura no se necesita realizar ninguna otra accion mas que ejecutar el promt completo.
+---
 
-el código o prompt esta creado para que a medida que vas ejecutando cada linea de código, puedas ir visualizando los diferentes pasos y sus resultados de acuerdo a una evaluación de esta empresa
+### Categorías y Productos
 
-se mostraran fragmentos de tablas, para ayudar con la visualización inicial.
-se imprimirán graficos para un mejor entendimiento de los datos, al igual que 3 mapas interactivos que dan una visión diferente de la forma de trabajo.
+**Categorías con mayor volumen de ventas:**
+- Muebles
+- Electrónicos
+- Juguetes
 
+**Categorías con menor participación:**
+- Libros
+- Artículos para el hogar
 
-para terminar, hay un apartado llamado "Informe final" el cual se emplea, para poder redactar un pequeño resumen de los datos observados, combinándolo con las graficas y los links a los mapas interactivos.
+**Top 5 productos más vendidos:**
+- Mesa de noche
+- Microondas
+- Carrito de control remoto
+- Batería
+- Cama King
 
-este programa termina con 2 líneas de código comentadas las cuales permiten instalar las librerias para poder exportar el informe en formato PDF y posteriormente la accion de publicarlo en PDF, 
-unicamente es necesario borrar el signo de gato "#".
+**Bottom 5 productos menos vendidos:**
+- Ciencia de datos con Python
+- Guitarra eléctrica
+- Mochila
+- Auriculares con micrófono
+- Celular ABXY
 
-como nota importante, todo grafico generado en este código, se guarda directamente en Drive, posteriormente se sube al repositorio de GitHub manualmente por dicho motivo no se ejecutan las líneas de código de impresión del informe.
-pero en el pdf "Reporte_final_ (Reporte/Reporte_final_.pdf) localizado en la carpeta Reporte, podemos tener acceso al documento final, que se genera con esos códigos, teniendo acceso libre a los links interactivos.
+**Insight:**  
+El desempeño de productos varía entre sucursales, lo que abre oportunidades para **redistribución de inventario** y campañas segmentadas.
 
+---
 
+### Valoración del Cliente
+
+- Las calificaciones promedio se ubican entre **3.9 y 4.1** en todas las sucursales.
+- La **Sucursal 3** presenta la mejor calificación promedio.
+- La sucursal con mayores ingresos no es necesariamente la mejor valorada.
+
+**Insight:**  
+La satisfacción del cliente y los ingresos no están directamente correlacionados; mejorar la experiencia del cliente fortalece la sostenibilidad del negocio.
+
+---
+
+### Métodos de Pago
+
+- El pago con **tarjeta de crédito** es el método predominante en todas las sucursales.
+- Los pagos electrónicos facilitan la trazabilidad, el control financiero y la integración de datos.
+- Las comisiones y la dependencia tecnológica representan desafíos operativos.
+
+**Insight:**  
+La alta adopción de pagos electrónicos permite implementar promociones bancarias y escalar ventas en canales digitales.
+
+---
+
+## Análisis Geográfico
+
+- Los mapas de calor y dispersión muestran una **distribución geográfica similar de las ventas** entre las sucursales.
+- No se identifica una relación directa entre ubicación geográfica y desempeño en ventas.
+
+**Visualizaciones interactivas:**
+- Heatmap de ventas:  
+  https://julio-avila-4884.github.io/Jra_challenge/mapa_heat.html
+- Mapa de dispersión de ventas:  
+  https://julio-avila-4884.github.io/Jra_challenge/mapa_disp.html
+
+---
+
+## Conclusiones y Recomendaciones
+
+- La **Sucursal 4** requiere un ajuste estratégico para mejorar su desempeño.
+- Recomendaciones principales:
+  - Optimizar la rotación y redistribución de inventario.
+  - Reducir exceso de stock de productos de baja rotación.
+  - Reforzar categorías y productos de alto desempeño.
+  - Implementar planes de mejora continua enfocados en la experiencia del cliente.
+
+En caso de considerar el cierre de una sucursal para maximizar el retorno de inversión, la **Sucursal 4** es la opción más viable, redistribuyendo su inventario entre las restantes.
+
+---
+
+## Tecnologías Utilizadas
+
+- Python  
+- Pandas  
+- Matplotlib  
+- Folium  
+- Jupyter Notebook  
+
+---
+
+## Estructura del Proyecto
+
+Alura_Store/
+├── data/
+│   ├─raw/                # Datos originales (sin modificar)
+│   │   └── tienda_1.csv
+│   │   └── tienda_2.csv
+│   │   └── tienda_3.csv
+│   │   └── tienda_4.csv
+│   └── processed/          # Datos limpios / transformados
+│       └── alura_store_clean.csv
+│
+├── notebooks/
+│   └── Jra_Challenge_Alura__Store.ipynb
+│
+├── images/
+│   └── *.png
+│
+├── maps/
+│   └── *.html
+│
+├── reports/
+│   └── Reporte_final_.pdf
+│        
+└── README.md               

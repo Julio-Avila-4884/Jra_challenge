@@ -1,0 +1,177 @@
+# Alura Store — Sales and Business Performance Analysis
+
+## Project Context
+
+Alura Store is a retail business with four branches.  
+The objective of this analysis is to provide a **global and per-branch view of business performance**, allowing stakeholders to understand the current status of operations and support **strategic decision-making**.
+
+The study considers multiple key factors such as revenue, profitability, products, customer satisfaction, payment methods, and the geographic behavior of sales.
+
+---
+
+## Analysis Objectives
+
+- Evaluate revenue and profit by branch  
+- Analyze each store’s contribution to total revenue  
+- Identify best- and worst-selling categories and products  
+- Evaluate average customer ratings  
+- Analyze predominant payment methods  
+- Support strategic decisions regarding inventory management and branch viability  
+
+---
+
+## Data Used
+
+- Source: Transactional data provided by the client  
+- Number of branches analyzed: **4**  
+- Main variables:
+  - Branch
+  - Category and product
+  - Revenue
+  - Shipping cost
+  - Customer rating
+  - Payment method
+  - Geographic location
+
+---
+
+## Methodology
+
+1. Data ingestion and validation  
+2. Revenue and profit calculation  
+3. Comparative analysis by branch  
+4. Category and product analysis  
+5. Customer satisfaction evaluation  
+6. Payment method analysis  
+7. Geographic visualization (heatmaps and scatter maps)  
+8. Results interpretation and recommendations  
+
+---
+
+## Key Findings
+
+### Revenue and Profitability by Branch
+
+- **Branch 1** generates the highest revenue and profit  
+- **Branch 4** contributes the least to overall profit, despite having the lowest average shipping cost  
+- Revenue distribution remains relatively balanced across branches (≈24%–26%)
+
+**Insight:**  
+Lower operational costs do not guarantee higher profitability; sales volume and product mix are key drivers.
+
+---
+
+### Categories and Products
+
+**Top-selling categories:**
+- Furniture  
+- Electronics  
+- Toys  
+
+**Lowest-performing categories:**
+- Books  
+- Home goods  
+
+**Top 5 best-selling products:**
+- Nightstand  
+- Microwave  
+- Remote control car  
+- Battery  
+- King-size bed  
+
+**Bottom 5 least-selling products:**
+- Data Science with Python  
+- Electric guitar  
+- Backpack  
+- Headset with microphone  
+- ABXY cellphone  
+
+**Insight:**  
+Product performance varies by branch, creating opportunities for **inventory redistribution** and targeted marketing campaigns.
+
+---
+
+### Customer Ratings
+
+- Average ratings range between **3.9 and 4.1** across all branches  
+- **Branch 3** has the highest average customer rating  
+- The branch with the highest revenue is not necessarily the best rated  
+
+**Insight:**  
+Customer satisfaction and revenue are not directly correlated; improving customer experience strengthens long-term business sustainability.
+
+---
+
+### Payment Methods
+
+- **Credit card payments** are the predominant method across all branches  
+- Electronic payments improve traceability, financial control, and data integration  
+- Transaction fees and technology dependence represent operational challenges  
+
+**Insight:**  
+High adoption of electronic payments enables banking promotions and supports scaling sales through digital channels.
+
+---
+
+## Geographic Analysis
+
+- Heatmaps and scatter plots show a **similar geographic distribution of sales** across branches  
+- No direct relationship is identified between geographic location and sales performance  
+
+**Interactive visualizations:**
+- Sales heatmap:  
+  https://julio-avila-4884.github.io/Jra_challenge/mapa_heat.html  
+- Sales scatter map:  
+  https://julio-avila-4884.github.io/Jra_challenge/mapa_disp.html  
+
+---
+
+## Conclusions and Recommendations
+
+- **Branch 4** requires a strategic adjustment to improve its performance  
+- Key recommendations:
+  - Optimize inventory turnover and redistribution  
+  - Reduce excess stock of low-rotation products  
+  - Reinforce high-performing categories and products  
+  - Implement continuous improvement plans focused on customer experience  
+
+If branch closure is considered to maximize return on investment, **Branch 4** is the most viable option, with inventory redistributed among the remaining branches.
+
+---
+
+## Technologies Used
+
+- Python  
+- Pandas  
+- Matplotlib  
+- Folium  
+- Jupyter Notebook  
+
+---
+
+## Project Structure
+
+```text
+Alura_Store/
+├── data/
+│   ├── raw/
+│   │   ├── tienda_1.csv
+│   │   ├── tienda_2.csv
+│   │   ├── tienda_3.csv
+│   │   └── tienda_4.csv
+│   └── processed/
+│       └── alura_store_clean.csv
+│
+├── notebooks/
+│   └── Jra_Challenge_Alura__Store.ipynb
+│
+├── images/
+│   └── *.png
+│
+├── maps/
+│   └── *.html
+│
+├── reports/
+│   └── Reporte_final_.pdf
+│
+└── README.md
